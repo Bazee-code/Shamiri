@@ -3,6 +3,7 @@ import {
   Text,
   StyleSheet,
   Dimensions,
+  ScrollView,
   SafeAreaView,
   Image,
   Pressable,
@@ -23,7 +24,7 @@ const WeeklyScreen = () => {
 
   return (
     <SafeAreaView style={styles.safeAreaStyles}>
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <View style={styles.headerContainer}>
           <Pressable onPress={goToDaily} hitSlop={70}>
             <AntDesign name="left" color="rgba(196, 196, 196, 1)" size={15} />
@@ -81,7 +82,7 @@ const WeeklyScreen = () => {
             Talk to our therapists about employee burnout?
           </Text>
         </View>
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
@@ -92,7 +93,7 @@ const styles = StyleSheet.create({
   },
   container: {
     backgroundColor: 'rgba(240,240,240,1)',
-    height: screenHeight,
+    // height: screenHeight,
   },
   headerContainer: {
     padding: 20,

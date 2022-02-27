@@ -5,6 +5,7 @@ import {
   Dimensions,
   SafeAreaView,
   Pressable,
+  ScrollView,
   Button,
 } from 'react-native';
 import React from 'react';
@@ -26,7 +27,7 @@ const DailyScreen = () => {
 
   return (
     <SafeAreaView style={styles.safeAreaStyles}>
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <View style={styles.headerContainer}>
           <Pressable onPress={goBack} hitSlop={70}>
             <Text>
@@ -44,7 +45,7 @@ const DailyScreen = () => {
                 <Text style={styles.dailyText}>Daily</Text>
               </View>
               <View style={styles.weeklyButton}>
-                <Pressable onPress={goToWeekly} >
+                <Pressable onPress={goToWeekly}>
                   <Text style={styles.weeklyText}>Weekly</Text>
                 </Pressable>
               </View>
@@ -93,7 +94,7 @@ const DailyScreen = () => {
             </View>
           </View>
         </View>
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };

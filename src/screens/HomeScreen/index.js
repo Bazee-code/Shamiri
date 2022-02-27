@@ -1,8 +1,9 @@
 import {
   StyleSheet,
   SafeAreaView,
-  View,
+  ScrollView,
   Dimensions,
+  View,
   Platform,
 } from 'react-native';
 import React from 'react';
@@ -13,11 +14,11 @@ const screenHeight = Dimensions.get('window').height;
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.safeAreaStyles}>
-      <View style={styles.homeScreenStyles}>
+      <ScrollView style={styles.homeScreenStyles}>
         <Calendar />
         <PieGraph />
         <WellnessPlan />
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
