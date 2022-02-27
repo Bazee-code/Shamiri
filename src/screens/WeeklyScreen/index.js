@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   },
   container: {
     backgroundColor: 'rgba(240,240,240,1)',
-    // height: screenHeight,
+    height: screenHeight,
   },
   headerContainer: {
     padding: 20,
